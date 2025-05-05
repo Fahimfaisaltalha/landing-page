@@ -40,12 +40,13 @@ body{
 }
 
 .hero{
-    background-color: #4e9805;
+    background-color: #49b96e;
     color: white;
     text-align: center;
-    padding: 70px 20px;
-
+    padding: 100px 20px;
+    background-image: linear-gradient(45deg, #4ade80, #86efac); 
 }
+
 .hero-content h1{
     font-size: 40px;
     margin-bottom: 20px;
@@ -56,18 +57,20 @@ body{
     margin-bottom: 40px;
 }
 .btn{
-    background-color: #3e6f0c ;
+    background-color:#49b96e;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 30px;  
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 25px;  
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;  
     font-size: 16px;
+    font-weight: bold;  
 }
 .btn:hover{
     background-color: white;
     color: #3e6f0c;
+    transform: scale(1.05);  
 }
 .features{
     text-align: center;
@@ -83,15 +86,17 @@ body{
 
 }
 .feature-card{
-    box-shadow: 0 2px 5px gray;
-    padding: 20px;
-    border-radius: 5px;
-  
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    padding: 30px; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease;  
+}
+.feature-card:hover{
+    transform: translateY(-5px);  
 }
 .feature-card i{
     font-size: 40px;
-    color: #4e9805;
+    color: #49b96e;
     margin-bottom: 10px; 
   
 }
@@ -100,13 +105,39 @@ body{
     padding: 40px 20px;
 }
 .download-buttons{
-    margin-top:20px;
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;  
+    flex-wrap: wrap; 
 }
+
+
+.download .btn {
+    background-color:#49b96e;
+    color: white;
+    padding: 12px 30px;
+    border: 2px solid #49b96e;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.download .btn:hover {
+    background-color: #49b96e;
+    color: white;
+    border-color: #49b96e;
+    transform: scale(1.05);
+}
+
 .footer{
     color: white;
-    background-color: black;
+    background-color: #222;  
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 40px;
 }
 @media (max-width: 768px) {
 
